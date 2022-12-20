@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+:root{
+    --bg-color: #141414;
+    --bg-gradient: linear-gradient
+    (135deg,
+     #0e002e 0%,
+     #1e092b 23%, 
+     #320c65 49%, 
+     #a01b7c 80%, 
+     #c21780 100%
+     );
+    --text-color:#FFFFFF;
+    --main-color:#D136D1;
+}
+
+body{
+    font-family:"Montserrat", "Noto Sans JP", Arial, "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans", Meiryo, sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    font-feature-settings: "palt";
+}
+
+img{
+    height: 100%;
+    margin: 0 auto;
+    vertical-align: bottom;
+}
+
+.pc{
+    display: block;
+}
+
+.sp{
+    display: none;
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.section{
+    padding: 110px 0;
+}
+
+.section__heading{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.btn{
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0 auto;
+    padding: 24px 0;
+    transition: all 0.3s;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #c41a7f 0%, #664bbf 100%);
+    box-shadow:0 10px 0 #dd118e;
+}
+
+.btn:hover{
+    transform: translateY(4px);
+    box-shadow:0 6px 0 #dd118e;
+}
+
+.btn:active{
+    box-shadow: none;
+}
+
+.heading01{
+    font-size: 60px;
+    font-weight: bold;
+    color: var(--main-color);
+    line-height: 1;
+    letter-spacing: 0.05em;
+
+}
+
+.heading01__subtitle{
+    display: block;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-top: 5px;
+}
+
