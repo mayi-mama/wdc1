@@ -2,14 +2,14 @@
 
 :root{
     --bg-color: #141414;
-    --bg-gradient: linear-gradient
-    (135deg,
-     #0e002e 0%,
-     #1e092b 23%, 
-     #320c65 49%, 
-     #a01b7c 80%, 
-     #c21780 100%
-     );
+    --bg-gradient: linear-gradient(
+        135deg,
+        #0e002e 0%,
+        #1e092b 23%,
+        #320c65 49%,
+        #a01b7c 80%,
+        #c21780 100%
+      );
     --text-color:#FFFFFF;
     --main-color:#D136D1;
 }
@@ -96,3 +96,208 @@ img{
     margin-top: 5px;
 }
 
+.table-type01{
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.table-type01 td,
+.table-type01 th{
+    text-align: left;
+    padding: 5px 0;
+}
+
+.table-type02{
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.table-type02 tr{
+    border-bottom: solid 1px #740174
+}
+
+.table-type02 th,
+.table-type02 td{
+    text-align: left;
+    padding: 40px 30px;
+}
+
+.table-type02 th{
+    width: 200px;
+}
+
+.table-type02 td > p{
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.header{
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 90px;
+    z-index: 10;
+    padding: 30px;
+}
+
+.header__logo{
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.3;
+    color: var(--main-color);
+}
+
+.gnav__list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+.gnav__item{
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.gnav__link{
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.mv{
+    background: var(--bg-gradient);
+}
+
+.mv__inner{
+    display: flex;
+    position: relative;
+    align-items: center;
+    max-width: 1240px;
+    height:700px;
+    margin:0 auto;
+    padding: 0 50px;
+    background-image: url(img/mv.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 560px 736px;
+}
+
+.mv__titleArea{
+    position: relative;
+    color:#FFFFFF;
+}
+
+.mv__titleArea::after{
+    display: block;
+    content: "";
+    position: absolute;
+    right: 40px;
+    bottom: 20px;
+    width: 326px;
+    height: 150px;
+    transform: rotate(-3deg);
+    background-image: url(img/teiji-de-kaerumon.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.mv__subtitle{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1;
+    color: var(--main-color);
+    margin-bottom: 0.8em;
+}
+
+.mv__title{
+    font-size: clamp(24px, 10vw, 100px);
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom:  10px;
+}
+
+.mv__date{
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: 0.07em;
+}
+
+.mv__btn{
+    margin-top: 2em;
+}
+
+.mv__speaker-name{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-size: 21px;
+    line-height: 1;
+}
+
+.mv__speaker-name-small{
+    font-size: 0.8em;
+}
+
+.mv__spaker-name-label{
+    font-size: 14px;
+    line-height: 1;
+}
+
+.about__body{
+    display: flex;
+    align-items: center;
+    column-gap: 70px;
+}
+
+.about__img-wrapper{
+    flex: 0 1 40%;
+}
+
+.about__desc{
+    flex: 1;
+}
+
+.about__subtitle{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.about__title{
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.3;
+    letter-spacing: 0.1em;
+    color: var(--main-color);
+    margin-bottom: 40px;
+}
+
+.about__info{
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.about__btn{
+    margin-top: 20px;
+}
+
+.speaker{
+    background: var(--bg-gradient);
+}
+
+.speaker-list{
+    display: grid;
+    row-gap: 80px;
+}
+
+.speaker-box{
+    display: flex;
+    column-gap: 60px;
+}
